@@ -2,6 +2,15 @@ from dataclasses import dataclass
 
 
 @dataclass
+class DatabaseSettings:
+    user: str
+    password: str
+    host: str
+    port: int
+    database: str
+
+
+@dataclass
 class Result:
     sport_pass_id: str
     first_name: str

@@ -1,4 +1,3 @@
-RESULTS_QUERY ="""
 WITH SerienRings AS (
     SELECT
         ScheibenID,
@@ -37,4 +36,3 @@ ON sr.ScheibenID = sb.ScheibenID
 LEFT JOIN SerienTreffers st
 ON st.ScheibenID = sb.ScheibenID
 WHERE sb.Zeitstempel LIKE ?;
-"""
